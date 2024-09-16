@@ -12,7 +12,7 @@ The application consists of three main components:
 
 ## Requirements
 
-- Java 11 or later
+- Java 21
 - Maven 3.6 or later
 
 ## How to Build
