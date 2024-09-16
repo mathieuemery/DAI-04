@@ -3,7 +3,7 @@ import ch.heigvd.dai.Main;
 import java.util.concurrent.Callable;
 import picocli.CommandLine;
 @CommandLine.Command(name = "hello", description = "Print a 'Hello World!' type of message.")
-        public class Hello implements Callable<Integer> {
+public class Hello implements Callable<Integer> {
         @CommandLine.ParentCommand protected Main parent;
         @CommandLine.Option(
                 names = {"-g", "--greetings"},
@@ -12,7 +12,7 @@ import picocli.CommandLine;
         protected String greetings;
         @Override
         public Integer call() {
-        System.out.println(greetings + " " + parent.getName() + "!");
-        return 0;
+                System.out.println(greetings + " " + parent.getName() + "!");
+                return 0;
         }
-        }
+}
